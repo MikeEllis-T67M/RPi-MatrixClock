@@ -42,7 +42,7 @@ def satellites_used(feed):
     return total_satellites, used_satellites
     
 try:
-    # Process the raw GPS info in a bckground thread
+    # Process the raw GPS info in a background thread
     gps3_thread = AGPS3mechanism()
     gps3_thread.stream_data()
     gps3_thread.run_thread()
